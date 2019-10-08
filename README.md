@@ -9,4 +9,5 @@ creating a basic introducing web page that included insertion of videos, picture
 2. comment discussion board insertion practice
 3. live chat insertion practice
 
-hosting address: https://kelebriss.github.io/html-practice/
+hosting address: https://kelebriss.github.io/html-practices/
+
