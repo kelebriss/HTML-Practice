@@ -1,7 +1,7 @@
 # html-practice
 practice for creating html web pages
 
-creating a basic introducing web page that included insertion of video, pincture and links.
+creating a basic introducing web page that included insertion of videos, pictures and links.
 
 <additional function>
   
