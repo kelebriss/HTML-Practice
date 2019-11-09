@@ -1,13 +1,11 @@
 # html-practice
-practice for creating html web pages
+practice for creating html web pages with css and javascript
 
 creating a basic introducing web page that included insertion of videos, pictures and links.
 
-<additional function>
-  
-1. analytic google add on practice
-2. comment discussion board insertion practice
-3. live chat insertion practice
+practice hosting address: https://kelebriss.github.io/html-practices/
 
-hosting address: https://kelebriss.github.io/html-practices/
+================================================================================================
+
+Some simple practice web application using HTML,CSS and Java Script
 
