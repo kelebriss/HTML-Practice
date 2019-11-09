@@ -1,0 +1,48 @@
+
+<html lang="en" dir="ltr">
+  <head>
+    <title>Real Time Editor</title>
+    <script>
+        function refresh()
+        {
+           var textConstant = document.getElementById('editor').value;
+           document.getElementById('viewer').srcdoc = textConstant;
+        }
+    </script>
+    <style media="screen">
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      .main{
+        background: #ecf0f1;
+        width: 100%;
+        height: 100%;
+        display: inline-flex;
+      }
+      #editor-textarea
+      {
+        width: 100%;
+        height: 95%;
+        margin: 10px;
+        padding: 5px;
+        font: 25px arial, sans-serif;
+      }
+      #viewer
+      {
+        border: none;
+        width: 100%;
+        height: 95%;
+        margin: 10px;
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <textarea id="editor" onkeyup="refresh()" placeholder="Coding here"></textarea>
+      <iframe id="viewer"></iframe>
+    </div>
+
+  </body>
+</html>
