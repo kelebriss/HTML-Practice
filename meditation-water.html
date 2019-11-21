@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        margin: 0;
+        padding: 0;
+      }
+      .background{
+        position: absolute;
+        top: -5px;
+        left: -4px;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("https://cdn.pixabay.com/photo/2010/12/13/10/09/abstract-2384_960_720.jpg");
+        background-size: cover;
+        filter:url("#turbulence");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <audio autoplay loop>
+        <source src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-27787/zapsplat_nature_lake_ambience_gentle_waves_lap_shore_wind_reeds_trees_distant_birds_27856.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <svg>
+      <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+          <feTurbulence id="water-filter" numOctaves="3" seed="2" baseFrequency="0.02 0.05"></feTurbulence>
+          <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+          <animate xlink:href="#water-filter" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1;" values="0.02 0.06; 0.04 0.08;0.02 0.06" repeatCount="indefinite"></animate>
+      </filter>
+    </svg>
+  </body>
+</html>
